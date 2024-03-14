@@ -5,7 +5,7 @@
   "mode": 0,
   "forceAlphaBlending": false,
   "id": "node material",
-  "name": "skateboardDecalMat",
+  "name": "wallDecalMat",
   "checkReadyOnEveryCall": false,
   "checkReadyOnlyOnce": false,
   "state": "",
@@ -27,203 +27,14 @@
   "pointsCloud": false,
   "fillMode": 0,
   "editorData": {
-    "locations": [
-      {
-        "blockId": 927,
-        "x": 1060,
-        "y": 100
-      },
-      {
-        "blockId": 928,
-        "x": 720,
-        "y": 80
-      },
-      {
-        "blockId": 929,
-        "x": 240,
-        "y": 40
-      },
-      {
-        "blockId": 930,
-        "x": -480,
-        "y": 240
-      },
-      {
-        "blockId": 931,
-        "x": -480,
-        "y": 340
-      },
-      {
-        "blockId": 932,
-        "x": 240,
-        "y": 180
-      },
-      {
-        "blockId": 933,
-        "x": 2680,
-        "y": 920
-      },
-      {
-        "blockId": 934,
-        "x": 2400,
-        "y": 700
-      },
-      {
-        "blockId": 935,
-        "x": 520,
-        "y": 500
-      },
-      {
-        "blockId": 936,
-        "x": -40,
-        "y": 580
-      },
-      {
-        "blockId": 937,
-        "x": -480,
-        "y": 560
-      },
-      {
-        "blockId": 938,
-        "x": -480,
-        "y": 680
-      },
-      {
-        "blockId": 939,
-        "x": -480,
-        "y": 780
-      },
-      {
-        "blockId": 940,
-        "x": 680,
-        "y": 860
-      },
-      {
-        "blockId": 941,
-        "x": 0,
-        "y": 920
-      },
-      {
-        "blockId": 942,
-        "x": -480,
-        "y": 900
-      },
-      {
-        "blockId": 943,
-        "x": 280,
-        "y": 1060
-      },
-      {
-        "blockId": 944,
-        "x": -480,
-        "y": 1000
-      },
-      {
-        "blockId": 945,
-        "x": 120,
-        "y": 1120
-      },
-      {
-        "blockId": 946,
-        "x": 120,
-        "y": 1420
-      },
-      {
-        "blockId": 947,
-        "x": 1420,
-        "y": 1680
-      },
-      {
-        "blockId": 948,
-        "x": 680,
-        "y": 1600
-      },
-      {
-        "blockId": 949,
-        "x": -540,
-        "y": 1640
-      },
-      {
-        "blockId": 950,
-        "x": 1020,
-        "y": 1760
-      },
-      {
-        "blockId": 951,
-        "x": 2040,
-        "y": 2060
-      },
-      {
-        "blockId": 952,
-        "x": 680,
-        "y": 1880
-      },
-      {
-        "blockId": 953,
-        "x": 1060,
-        "y": 2100
-      },
-      {
-        "blockId": 954,
-        "x": 680,
-        "y": 2200
-      },
-      {
-        "blockId": 955,
-        "x": 400,
-        "y": 2120
-      },
-      {
-        "blockId": 956,
-        "x": -120,
-        "y": 2120
-      },
-      {
-        "blockId": 957,
-        "x": 140,
-        "y": 2300
-      },
-      {
-        "blockId": 958,
-        "x": 680,
-        "y": 1220
-      },
-      {
-        "blockId": 959,
-        "x": 780,
-        "y": 260
-      },
-      {
-        "blockId": 960,
-        "x": 140,
-        "y": 2080
-      },
-      {
-        "blockId": 961,
-        "x": -120,
-        "y": 2000
-      },
-      {
-        "blockId": 1311,
-        "x": 1020,
-        "y": 1860
-      },
-      {
-        "blockId": 1516,
-        "x": 1780,
-        "y": 2220
-      }
-    ],
+    "locations": [],
     "frames": [],
     "x": -374.05617816163044,
     "y": -214.3697264156341,
     "zoom": 0.48700246906748346
   },
   "customType": "BABYLON.NodeMaterial",
-  "outputNodes": [
-    927,
-    933
-  ],
+  "outputNodes": [],
   "blocks": [
     {
       "customType": "BABYLON.VertexOutputBlock",
