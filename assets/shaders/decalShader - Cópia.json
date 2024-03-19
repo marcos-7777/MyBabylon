@@ -998,7 +998,7 @@
       "disableLevelMultiplication": false,
       "texture": {
         "tags": null,
-        "url": "data:./assets/gltf/skateboard_mesh.glb#MarbleNormal",
+        "url": "data:./assets/gltf/skateboard_mesh.glb#image0",
         "uOffset": 0,
         "vOffset": 0,
         "uScale": 1,
@@ -1163,7 +1163,7 @@
       "disableLevelMultiplication": false,
       "texture": {
         "tags": null,
-        "url": "data:./assets/gltf/skateboard_mesh.glb#MarbleBaseColor",
+        "url": "data:./assets/gltf/skateboard_mesh.glb#image2",
         "uOffset": 0,
         "vOffset": 0,
         "uScale": 1,
@@ -1550,7 +1550,7 @@
       "disableLevelMultiplication": false,
       "texture": {
         "tags": null,
-        "url": "data:./assets/gltf/skateboard_mesh.glb#MarbleRoughness",
+        "url": "data:./assets/gltf/skateboard_mesh.glb#image1",
         "uOffset": 0,
         "vOffset": 0,
         "uScale": 1,
