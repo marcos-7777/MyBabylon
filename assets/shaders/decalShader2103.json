@@ -220,7 +220,10 @@
     "zoom": 0.48700246906748346
   },
   "customType": "BABYLON.NodeMaterial",
-  "outputNodes": [927, 933],
+  "outputNodes": [
+    927,
+    933
+  ],
   "blocks": [
     {
       "customType": "BABYLON.VertexOutputBlock",
@@ -1160,7 +1163,7 @@
       "disableLevelMultiplication": false,
       "texture": {
         "tags": null,
-        "url": "data:./assets/glb/skateboard_mesh.glb#MarbleBaseColor",
+        "url": "data:./assets/gltf/skateboard_mesh.glb#MarbleBaseColor",
         "uOffset": 0,
         "vOffset": 0,
         "uScale": 1,
@@ -1547,7 +1550,7 @@
       "disableLevelMultiplication": false,
       "texture": {
         "tags": null,
-        "url": "data:./assets/glb/skateboard_mesh.glb#MarbleRoughness",
+        "url": "data:./assets/gltf/skateboard_mesh.glb#MarbleRoughness",
         "uOffset": 0,
         "vOffset": 0,
         "uScale": 1,
