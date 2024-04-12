@@ -215,19 +215,29 @@
       },
       {
         "blockId": 448,
-        "x": 1860,
-        "y": 320
+        "x": 1900,
+        "y": 300
       },
       {
         "blockId": 449,
-        "x": 1400,
-        "y": 20
+        "x": 1360,
+        "y": 40
+      },
+      {
+        "blockId": 5666,
+        "x": 1360,
+        "y": 280
+      },
+      {
+        "blockId": 6078,
+        "x": 1360,
+        "y": 160
       }
     ],
     "frames": [],
-    "x": -533.174483217233,
-    "y": 146.29353558617797,
-    "zoom": 0.6260919698349864
+    "x": -1668.3423440071012,
+    "y": 139.48811115282166,
+    "zoom": 1.3268782650058881
   },
   "customType": "BABYLON.NodeMaterial",
   "outputNodes": [
@@ -1809,10 +1819,20 @@
           "exposedPortPosition": -1
         },
         {
-          "name": "roughness"
+          "name": "roughness",
+          "inputName": "roughness",
+          "targetBlockId": 6078,
+          "targetConnectionName": "output",
+          "isExposedOnFrame": true,
+          "exposedPortPosition": -1
         },
         {
-          "name": "indexOfRefraction"
+          "name": "indexOfRefraction",
+          "inputName": "indexOfRefraction",
+          "targetBlockId": 5666,
+          "targetConnectionName": "output",
+          "isExposedOnFrame": true,
+          "exposedPortPosition": -1
         },
         {
           "name": "normalMapColor",
@@ -1879,6 +1899,64 @@
       "convertToLinearSpace": false,
       "valueType": "number",
       "value": 0.5
+    },
+    {
+      "customType": "BABYLON.InputBlock",
+      "id": 6078,
+      "name": "Roughness",
+      "comments": "",
+      "visibleInInspector": false,
+      "visibleOnFrame": false,
+      "target": 1,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "output"
+        }
+      ],
+      "type": 1,
+      "mode": 0,
+      "systemValue": null,
+      "animationType": 0,
+      "min": 0,
+      "max": 0,
+      "isBoolean": false,
+      "matrixMode": 0,
+      "isConstant": false,
+      "groupInInspector": "",
+      "convertToGammaSpace": false,
+      "convertToLinearSpace": false,
+      "valueType": "number",
+      "value": 0.2
+    },
+    {
+      "customType": "BABYLON.InputBlock",
+      "id": 5666,
+      "name": "Refraction intensity",
+      "comments": "",
+      "visibleInInspector": false,
+      "visibleOnFrame": false,
+      "target": 2,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "output"
+        }
+      ],
+      "type": 1,
+      "mode": 0,
+      "systemValue": null,
+      "animationType": 0,
+      "min": 0,
+      "max": 0,
+      "isBoolean": false,
+      "matrixMode": 0,
+      "isConstant": false,
+      "groupInInspector": "",
+      "convertToGammaSpace": false,
+      "convertToLinearSpace": false,
+      "valueType": "number",
+      "value": 1.5
     },
     {
       "customType": "BABYLON.MultiplyBlock",
