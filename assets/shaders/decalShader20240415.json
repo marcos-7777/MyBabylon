@@ -140,8 +140,8 @@
       },
       {
         "blockId": 3121,
-        "x": 1680,
-        "y": 1360
+        "x": 1700,
+        "y": 1580
       },
       {
         "blockId": 3122,
@@ -240,9 +240,9 @@
       }
     ],
     "frames": [],
-    "x": -494.82116447635366,
-    "y": -368.46495705612284,
-    "zoom": 0.43798120976848504
+    "x": -425.8187100970308,
+    "y": -888.3089099267737,
+    "zoom": 0.7716321045056752
   },
   "customType": "BABYLON.NodeMaterial",
   "outputNodes": [
@@ -1981,7 +1981,12 @@
           "name": "source"
         },
         {
-          "name": "layer"
+          "name": "layer",
+          "inputName": "layer",
+          "targetBlockId": 3115,
+          "targetConnectionName": "level",
+          "isExposedOnFrame": true,
+          "exposedPortPosition": -1
         },
         {
           "name": "lod"
