@@ -60,8 +60,8 @@
       },
       {
         "blockId": 55,
-        "x": 2680,
-        "y": 920
+        "x": 2880,
+        "y": 940
       },
       {
         "blockId": 56,
@@ -135,18 +135,18 @@
       },
       {
         "blockId": 71,
-        "x": 680,
-        "y": 1880
+        "x": 720,
+        "y": 2060
       },
       {
         "blockId": 73,
         "x": 1060,
-        "y": 2100
+        "y": 2240
       },
       {
         "blockId": 74,
-        "x": 680,
-        "y": 2200
+        "x": 720,
+        "y": 2340
       },
       {
         "blockId": 75,
@@ -181,22 +181,22 @@
       {
         "blockId": 82,
         "x": 1420,
-        "y": 1680
+        "y": 1880
       },
       {
         "blockId": 83,
-        "x": 680,
-        "y": 1600
+        "x": 720,
+        "y": 1820
       },
       {
         "blockId": 84,
-        "x": 1020,
-        "y": 1760
+        "x": 1040,
+        "y": 1940
       },
       {
         "blockId": 85,
-        "x": 1020,
-        "y": 1860
+        "x": 1040,
+        "y": 2020
       },
       {
         "blockId": 86,
@@ -205,23 +205,23 @@
       },
       {
         "blockId": 87,
-        "x": 1900,
-        "y": 300
+        "x": 1680,
+        "y": 1360
       },
       {
         "blockId": 88,
-        "x": 1360,
-        "y": 40
+        "x": 1280,
+        "y": 1360
       },
       {
         "blockId": 89,
-        "x": 1360,
-        "y": 160
+        "x": 1280,
+        "y": 1460
       },
       {
         "blockId": 90,
-        "x": 1360,
-        "y": 280
+        "x": 1280,
+        "y": 1560
       },
       {
         "blockId": 91,
@@ -232,12 +232,17 @@
         "blockId": 92,
         "x": -120,
         "y": 2000
+      },
+      {
+        "blockId": 1104,
+        "x": 680,
+        "y": 1540
       }
     ],
     "frames": [],
-    "x": -1124.1488103945971,
-    "y": -249.3111815211166,
-    "zoom": 0.807615094647826
+    "x": -221.72636281220758,
+    "y": -451.7775205612718,
+    "zoom": 0.5066081719740332
   },
   "customType": "BABYLON.NodeMaterial",
   "outputNodes": [
@@ -499,9 +504,6 @@
         },
         {
           "name": "baseColor",
-          "inputName": "baseColor",
-          "targetBlockId": 70,
-          "targetConnectionName": "output",
           "isExposedOnFrame": true,
           "exposedPortPosition": -1
         },
@@ -1094,6 +1096,352 @@
       "value": 1
     },
     {
+      "customType": "BABYLON.TextureBlock",
+      "id": 79,
+      "name": "ormTex",
+      "comments": "",
+      "visibleInInspector": false,
+      "visibleOnFrame": false,
+      "target": 3,
+      "inputs": [
+        {
+          "name": "uv",
+          "inputName": "uv",
+          "targetBlockId": 65,
+          "targetConnectionName": "output",
+          "isExposedOnFrame": true,
+          "exposedPortPosition": -1
+        },
+        {
+          "name": "source"
+        },
+        {
+          "name": "layer"
+        },
+        {
+          "name": "lod"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "rgba"
+        },
+        {
+          "name": "rgb"
+        },
+        {
+          "name": "r"
+        },
+        {
+          "name": "g"
+        },
+        {
+          "name": "b"
+        },
+        {
+          "name": "a"
+        },
+        {
+          "name": "level"
+        }
+      ],
+      "convertToGammaSpace": false,
+      "convertToLinearSpace": false,
+      "fragmentOnly": false,
+      "disableLevelMultiplication": false,
+      "texture": {
+        "tags": null,
+        "url": "data:./assets/glb/marble_mesh.glb#MarbleRoughness",
+        "uOffset": 0,
+        "vOffset": 0,
+        "uScale": 1,
+        "vScale": 1,
+        "uAng": 0,
+        "vAng": 0,
+        "wAng": 0,
+        "uRotationCenter": 0.5,
+        "vRotationCenter": 0.5,
+        "wRotationCenter": 0.5,
+        "homogeneousRotationInUVTransform": false,
+        "isBlocking": true,
+        "name": "marbleMat (Metallic Roughness)",
+        "metadata": {},
+        "hasAlpha": false,
+        "getAlphaFromRGB": false,
+        "level": 1,
+        "coordinatesIndex": 0,
+        "optimizeUVAllocation": true,
+        "coordinatesMode": 0,
+        "wrapU": 1,
+        "wrapV": 1,
+        "wrapR": 1,
+        "anisotropicFilteringLevel": 4,
+        "isCube": false,
+        "is3D": false,
+        "is2DArray": false,
+        "gammaSpace": true,
+        "invertZ": false,
+        "lodLevelInAlpha": false,
+        "lodGenerationOffset": 0,
+        "lodGenerationScale": 0,
+        "linearSpecularLOD": false,
+        "isRenderTarget": false,
+        "animations": [],
+        "invertY": false,
+        "samplingMode": 3,
+        "_useSRGBBuffer": false,
+        "noMipmap": false
+      }
+    },
+    {
+      "customType": "BABYLON.ReflectionBlock",
+      "id": 86,
+      "name": "Reflection",
+      "comments": "",
+      "visibleInInspector": false,
+      "visibleOnFrame": false,
+      "target": 3,
+      "inputs": [
+        {
+          "name": "position",
+          "inputName": "position",
+          "targetBlockId": 52,
+          "targetConnectionName": "output",
+          "isExposedOnFrame": true,
+          "exposedPortPosition": -1
+        },
+        {
+          "name": "world",
+          "inputName": "world",
+          "targetBlockId": 53,
+          "targetConnectionName": "output",
+          "isExposedOnFrame": true,
+          "exposedPortPosition": -1
+        },
+        {
+          "name": "color"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "reflection"
+        }
+      ],
+      "generateOnlyFragmentCode": false,
+      "useSphericalHarmonics": true,
+      "forceIrradianceInFragment": false,
+      "gammaSpace": true
+    },
+    {
+      "customType": "BABYLON.ClearCoatBlock",
+      "id": 87,
+      "name": "ClearCoat",
+      "comments": "",
+      "visibleInInspector": false,
+      "visibleOnFrame": false,
+      "target": 2,
+      "inputs": [
+        {
+          "name": "intensity",
+          "inputName": "intensity",
+          "targetBlockId": 88,
+          "targetConnectionName": "output",
+          "isExposedOnFrame": true,
+          "exposedPortPosition": -1
+        },
+        {
+          "name": "roughness",
+          "inputName": "roughness",
+          "targetBlockId": 89,
+          "targetConnectionName": "output",
+          "isExposedOnFrame": true,
+          "exposedPortPosition": -1
+        },
+        {
+          "name": "indexOfRefraction",
+          "inputName": "indexOfRefraction",
+          "targetBlockId": 90,
+          "targetConnectionName": "output",
+          "isExposedOnFrame": true,
+          "exposedPortPosition": -1
+        },
+        {
+          "name": "normalMapColor",
+          "inputName": "normalMapColor",
+          "targetBlockId": 1104,
+          "targetConnectionName": "rgb",
+          "isExposedOnFrame": true,
+          "exposedPortPosition": -1
+        },
+        {
+          "name": "uv"
+        },
+        {
+          "name": "tintColor"
+        },
+        {
+          "name": "tintAtDistance"
+        },
+        {
+          "name": "tintThickness"
+        },
+        {
+          "name": "worldTangent"
+        },
+        {
+          "name": "worldNormal"
+        },
+        {
+          "name": "TBN"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "clearcoat"
+        }
+      ],
+      "remapF0OnInterfaceChange": true
+    },
+    {
+      "customType": "BABYLON.InputBlock",
+      "id": 88,
+      "name": "ClearCoat intensity",
+      "comments": "",
+      "visibleInInspector": false,
+      "visibleOnFrame": false,
+      "target": 2,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "output"
+        }
+      ],
+      "type": 1,
+      "mode": 0,
+      "animationType": 0,
+      "min": 0,
+      "max": 1,
+      "isBoolean": false,
+      "matrixMode": 0,
+      "isConstant": false,
+      "groupInInspector": "",
+      "convertToGammaSpace": false,
+      "convertToLinearSpace": false,
+      "valueType": "number",
+      "value": 0.5
+    },
+    {
+      "customType": "BABYLON.InputBlock",
+      "id": 89,
+      "name": "Roughness",
+      "comments": "",
+      "visibleInInspector": false,
+      "visibleOnFrame": false,
+      "target": 1,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "output"
+        }
+      ],
+      "type": 1,
+      "mode": 0,
+      "animationType": 0,
+      "min": 0,
+      "max": 0,
+      "isBoolean": false,
+      "matrixMode": 0,
+      "isConstant": false,
+      "groupInInspector": "",
+      "convertToGammaSpace": false,
+      "convertToLinearSpace": false,
+      "valueType": "number",
+      "value": 0.2
+    },
+    {
+      "customType": "BABYLON.InputBlock",
+      "id": 90,
+      "name": "Refraction intensity",
+      "comments": "",
+      "visibleInInspector": false,
+      "visibleOnFrame": false,
+      "target": 2,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "output"
+        }
+      ],
+      "type": 1,
+      "mode": 0,
+      "animationType": 0,
+      "min": 0,
+      "max": 0,
+      "isBoolean": false,
+      "matrixMode": 0,
+      "isConstant": false,
+      "groupInInspector": "",
+      "convertToGammaSpace": false,
+      "convertToLinearSpace": false,
+      "valueType": "number",
+      "value": 1.5
+    },
+    {
+      "customType": "BABYLON.TextureBlock",
+      "id": 1104,
+      "name": "clearCoatTex",
+      "comments": "",
+      "visibleInInspector": false,
+      "visibleOnFrame": false,
+      "target": 3,
+      "inputs": [
+        {
+          "name": "uv",
+          "inputName": "uv",
+          "targetBlockId": 66,
+          "targetConnectionName": "output",
+          "isExposedOnFrame": true,
+          "exposedPortPosition": -1
+        },
+        {
+          "name": "source"
+        },
+        {
+          "name": "layer"
+        },
+        {
+          "name": "lod"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "rgba"
+        },
+        {
+          "name": "rgb"
+        },
+        {
+          "name": "r"
+        },
+        {
+          "name": "g"
+        },
+        {
+          "name": "b"
+        },
+        {
+          "name": "a"
+        },
+        {
+          "name": "level"
+        }
+      ],
+      "convertToGammaSpace": false,
+      "convertToLinearSpace": false,
+      "fragmentOnly": false,
+      "disableLevelMultiplication": false
+    },
+    {
       "customType": "BABYLON.LerpBlock",
       "id": 70,
       "name": "Lerp",
@@ -1480,104 +1828,6 @@
       ]
     },
     {
-      "customType": "BABYLON.TextureBlock",
-      "id": 79,
-      "name": "ormTex",
-      "comments": "",
-      "visibleInInspector": false,
-      "visibleOnFrame": false,
-      "target": 3,
-      "inputs": [
-        {
-          "name": "uv",
-          "inputName": "uv",
-          "targetBlockId": 65,
-          "targetConnectionName": "output",
-          "isExposedOnFrame": true,
-          "exposedPortPosition": -1
-        },
-        {
-          "name": "source"
-        },
-        {
-          "name": "layer"
-        },
-        {
-          "name": "lod"
-        }
-      ],
-      "outputs": [
-        {
-          "name": "rgba"
-        },
-        {
-          "name": "rgb"
-        },
-        {
-          "name": "r"
-        },
-        {
-          "name": "g"
-        },
-        {
-          "name": "b"
-        },
-        {
-          "name": "a"
-        },
-        {
-          "name": "level"
-        }
-      ],
-      "convertToGammaSpace": false,
-      "convertToLinearSpace": false,
-      "fragmentOnly": false,
-      "disableLevelMultiplication": false,
-      "texture": {
-        "tags": null,
-        "url": "data:./assets/glb/marble_mesh.glb#MarbleRoughness",
-        "uOffset": 0,
-        "vOffset": 0,
-        "uScale": 1,
-        "vScale": 1,
-        "uAng": 0,
-        "vAng": 0,
-        "wAng": 0,
-        "uRotationCenter": 0.5,
-        "vRotationCenter": 0.5,
-        "wRotationCenter": 0.5,
-        "homogeneousRotationInUVTransform": false,
-        "isBlocking": true,
-        "name": "marbleMat (Metallic Roughness)",
-        "metadata": {},
-        "hasAlpha": false,
-        "getAlphaFromRGB": false,
-        "level": 1,
-        "coordinatesIndex": 0,
-        "optimizeUVAllocation": true,
-        "coordinatesMode": 0,
-        "wrapU": 1,
-        "wrapV": 1,
-        "wrapR": 1,
-        "anisotropicFilteringLevel": 4,
-        "isCube": false,
-        "is3D": false,
-        "is2DArray": false,
-        "gammaSpace": true,
-        "invertZ": false,
-        "lodLevelInAlpha": false,
-        "lodGenerationOffset": 0,
-        "lodGenerationScale": 0,
-        "linearSpecularLOD": false,
-        "isRenderTarget": false,
-        "animations": [],
-        "invertY": false,
-        "samplingMode": 3,
-        "_useSRGBBuffer": false,
-        "noMipmap": false
-      }
-    },
-    {
       "customType": "BABYLON.MultiplyBlock",
       "id": 81,
       "name": "Multiply",
@@ -1761,196 +2011,6 @@
       "convertToLinearSpace": false,
       "valueType": "number",
       "value": 0
-    },
-    {
-      "customType": "BABYLON.ReflectionBlock",
-      "id": 86,
-      "name": "Reflection",
-      "comments": "",
-      "visibleInInspector": false,
-      "visibleOnFrame": false,
-      "target": 3,
-      "inputs": [
-        {
-          "name": "position",
-          "inputName": "position",
-          "targetBlockId": 52,
-          "targetConnectionName": "output",
-          "isExposedOnFrame": true,
-          "exposedPortPosition": -1
-        },
-        {
-          "name": "world",
-          "inputName": "world",
-          "targetBlockId": 53,
-          "targetConnectionName": "output",
-          "isExposedOnFrame": true,
-          "exposedPortPosition": -1
-        },
-        {
-          "name": "color"
-        }
-      ],
-      "outputs": [
-        {
-          "name": "reflection"
-        }
-      ],
-      "generateOnlyFragmentCode": false,
-      "useSphericalHarmonics": true,
-      "forceIrradianceInFragment": false,
-      "gammaSpace": true
-    },
-    {
-      "customType": "BABYLON.ClearCoatBlock",
-      "id": 87,
-      "name": "ClearCoat",
-      "comments": "",
-      "visibleInInspector": false,
-      "visibleOnFrame": false,
-      "target": 2,
-      "inputs": [
-        {
-          "name": "intensity",
-          "inputName": "intensity",
-          "targetBlockId": 88,
-          "targetConnectionName": "output",
-          "isExposedOnFrame": true,
-          "exposedPortPosition": -1
-        },
-        {
-          "name": "roughness",
-          "inputName": "roughness",
-          "targetBlockId": 89,
-          "targetConnectionName": "output",
-          "isExposedOnFrame": true,
-          "exposedPortPosition": -1
-        },
-        {
-          "name": "indexOfRefraction",
-          "inputName": "indexOfRefraction",
-          "targetBlockId": 90,
-          "targetConnectionName": "output",
-          "isExposedOnFrame": true,
-          "exposedPortPosition": -1
-        },
-        {
-          "name": "normalMapColor",
-          "isExposedOnFrame": true,
-          "exposedPortPosition": -1
-        },
-        {
-          "name": "uv"
-        },
-        {
-          "name": "tintColor"
-        },
-        {
-          "name": "tintAtDistance"
-        },
-        {
-          "name": "tintThickness"
-        },
-        {
-          "name": "worldTangent"
-        },
-        {
-          "name": "worldNormal"
-        },
-        {
-          "name": "TBN"
-        }
-      ],
-      "outputs": [
-        {
-          "name": "clearcoat"
-        }
-      ],
-      "remapF0OnInterfaceChange": true
-    },
-    {
-      "customType": "BABYLON.InputBlock",
-      "id": 88,
-      "name": "ClearCoat intensity",
-      "comments": "",
-      "visibleInInspector": false,
-      "visibleOnFrame": false,
-      "target": 2,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "output"
-        }
-      ],
-      "type": 1,
-      "mode": 0,
-      "animationType": 0,
-      "min": 0,
-      "max": 1,
-      "isBoolean": false,
-      "matrixMode": 0,
-      "isConstant": false,
-      "groupInInspector": "",
-      "convertToGammaSpace": false,
-      "convertToLinearSpace": false,
-      "valueType": "number",
-      "value": 0.5
-    },
-    {
-      "customType": "BABYLON.InputBlock",
-      "id": 89,
-      "name": "Roughness",
-      "comments": "",
-      "visibleInInspector": false,
-      "visibleOnFrame": false,
-      "target": 1,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "output"
-        }
-      ],
-      "type": 1,
-      "mode": 0,
-      "animationType": 0,
-      "min": 0,
-      "max": 0,
-      "isBoolean": false,
-      "matrixMode": 0,
-      "isConstant": false,
-      "groupInInspector": "",
-      "convertToGammaSpace": false,
-      "convertToLinearSpace": false,
-      "valueType": "number",
-      "value": 0.2
-    },
-    {
-      "customType": "BABYLON.InputBlock",
-      "id": 90,
-      "name": "Refraction intensity",
-      "comments": "",
-      "visibleInInspector": false,
-      "visibleOnFrame": false,
-      "target": 2,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "output"
-        }
-      ],
-      "type": 1,
-      "mode": 0,
-      "animationType": 0,
-      "min": 0,
-      "max": 0,
-      "isBoolean": false,
-      "matrixMode": 0,
-      "isConstant": false,
-      "groupInInspector": "",
-      "convertToGammaSpace": false,
-      "convertToLinearSpace": false,
-      "valueType": "number",
-      "value": 1.5
     },
     {
       "customType": "BABYLON.MultiplyBlock",
