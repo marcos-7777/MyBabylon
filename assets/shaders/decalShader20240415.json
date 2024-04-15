@@ -235,9 +235,9 @@
       }
     ],
     "frames": [],
-    "x": -98.4832177971623,
-    "y": -62.433036708354074,
-    "zoom": 0.43157947791625556
+    "x": -1124.1488103945971,
+    "y": -249.3111815211166,
+    "zoom": 0.807615094647826
   },
   "customType": "BABYLON.NodeMaterial",
   "outputNodes": [
@@ -1836,9 +1836,6 @@
         },
         {
           "name": "normalMapColor",
-          "inputName": "normalMapColor",
-          "targetBlockId": 79,
-          "targetConnectionName": "rgb",
           "isExposedOnFrame": true,
           "exposedPortPosition": -1
         },
