@@ -60,7 +60,7 @@
       },
       {
         "blockId": 3103,
-        "x": 2880,
+        "x": 2860,
         "y": 940
       },
       {
@@ -237,17 +237,23 @@
         "blockId": 3141,
         "x": -120,
         "y": 2000
+      },
+      {
+        "blockId": 4462,
+        "x": 2860,
+        "y": 740
       }
     ],
     "frames": [],
-    "x": -161.51595855427308,
-    "y": -571.7206098123735,
-    "zoom": 0.4638001879377982
+    "x": -1678.0239227061131,
+    "y": -262.71211789509687,
+    "zoom": 0.7428361746754683
   },
   "customType": "BABYLON.NodeMaterial",
   "outputNodes": [
     3097,
-    3103
+    3103,
+    4462
   ],
   "blocks": [
     {
@@ -2058,6 +2064,35 @@
       "convertToLinearSpace": false,
       "fragmentOnly": false,
       "disableLevelMultiplication": false
+    },
+    {
+      "customType": "BABYLON.FragmentOutputBlock",
+      "id": 4462,
+      "name": "FragmentOutput",
+      "comments": "",
+      "visibleInInspector": false,
+      "visibleOnFrame": false,
+      "target": 2,
+      "inputs": [
+        {
+          "name": "rgba"
+        },
+        {
+          "name": "rgb",
+          "inputName": "rgb",
+          "targetBlockId": 3104,
+          "targetConnectionName": "clearcoatInd",
+          "isExposedOnFrame": true,
+          "exposedPortPosition": -1
+        },
+        {
+          "name": "a"
+        }
+      ],
+      "outputs": [],
+      "convertToGammaSpace": false,
+      "convertToLinearSpace": false,
+      "useLogarithmicDepth": false
     },
     {
       "customType": "BABYLON.MultiplyBlock",
